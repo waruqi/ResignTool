@@ -1,0 +1,8 @@
+target("ResignTool")
+    add_rules("xcode.application")
+    add_files("**.m")
+    add_files("ResignTool/*.xcassets")
+    add_files("ResignTool/**.storyboard")
+    add_files("ResignTool/Info.plist")
+    add_includedirs("ResignTool/Entity", "ResignTool/Factory", "ResignTool/Util")
+    add_frameworks("Security")
